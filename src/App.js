@@ -16,7 +16,7 @@ const App = () => {
         <Loader />
         <ScrollToTop />
         <Routes>
-          <Route path="" element={<Dapp />} />
+          <Route path="/" element={<Dapp />} />
           {/* <Route path="dapp" element={<Dapp />} /> */}
         </Routes>
       </Web3ContextProvider>
