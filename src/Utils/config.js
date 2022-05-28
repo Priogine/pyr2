@@ -6,9 +6,9 @@ import {DEFAULT_NETWORK} from './network';
 export const config = {
     networkId: DEFAULT_NETWORK,
     bananaAbi: bananaAbi.default,
-    bananaAddress: "0x553A0029F230eE8E9033c2a069F80D6eC2759801",
+    bananaAddress: "0x3e95540C9e64FCaC38C1B10a6045e3E8c55ac139",
     nodeAbi: nodeAbi.default,
-    nodeAddress: "0xb6a2c5826d64A9B876F2Cb467Ba029495616D5f9",
+    nodeAddress: "0xe44e2912BA5c0085B621EAEcB10c7e9e3dBE97f9",
     LPAbi: LPAbi.default,
-    pairAddress: "0x7FA74Fe31e3EAFf4fEEc8f35fb793af1b0A4e5f3"
+    pairAddress: "0x7c9F916c34d51A6e015470198851e70Ee44E8A04"
 };

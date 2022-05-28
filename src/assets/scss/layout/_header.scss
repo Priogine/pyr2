@@ -16,6 +16,12 @@
     .hidden-unless-xl {
         display: none !important
     }
+    #buy_banana {
+        margin-right:10px,
+    }
+    #btn-connect {
+        margin-left: 10px;
+    }
 }
 
 @media(min-width:576px) and (max-width:767px) {
@@ -31,6 +37,12 @@
     .hidden-unless-lg,
     .hidden-unless-xl {
         display: none !important
+    }
+    #buy_banana {
+        margin-right:50px,
+    }
+    #btn-connect {
+        margin-left: 50px;
     }
 }
 
@@ -48,6 +60,12 @@
     .hidden-unless-xl {
         display: none !important
     }
+    #buy_banana {
+        margin-right:60px,
+    }
+    #btn-connect {
+        margin-left: 60px;
+    }
 }
 
 @media(min-width:992px) and (max-width:1199px) {
@@ -64,6 +82,12 @@
     .hidden-unless-xl {
         display: none !important
     }
+    #buy_banana {
+        margin-right:70px,
+    }
+    #btn-connect {
+        margin-left: 70px;
+    }
 }
 
 @media(min-width:1200px) {
@@ -79,5 +103,11 @@
     .hidden-unless-md,
     .hidden-unless-lg {
         display: none !important
+    }
+    #buy_banana {
+        margin-right:70px,
+    }
+    #btn-connect {
+        margin-left: 70px;
     }
 }

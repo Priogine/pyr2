@@ -11,3 +11,7 @@ body {
   color: #535353;
   overflow-x: hidden;
 }
+::selection {
+  background-color: white;
+  color: black;
+}

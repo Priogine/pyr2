@@ -91,7 +91,7 @@ const Dapp = () => {
   const handleCreateNode = async () => {
     if (balance < 10) {
       alert(
-        "You don't have enough EASY token now. Please buy it and try again."
+        "You don't have enough MID token now. Please buy it and try again."
       );
       return;
     } else if (createFlg === true) {
@@ -168,68 +168,7 @@ const Dapp = () => {
           <br />
           <br />
           <div className="row">
-          <div className="col-xl-3 col-lg-6 mt-3">
-              <div
-                className="concept-box-dapp"
-                style={{ paddingTop: "20px", paddingBottom: "30px" }}
-              >
-                <span className="badge badge-warning">1 EASY</span>{" "}
-                <span className="badge badge-success" id="banana_price">
-                  {tokenPrice ? tokenPrice.toFixed(4) : "--"} $
-                </span>
-                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
-                <span className="badge badge-light">
-                  You have: <span id="banana_balance">{balance}</span> EASY
-                </span>
-                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
-                <button
-                  className="btn btn-primary js-tilt"
-                  id="create-node"
-                  onClick={handleCreateNode}
-                  ref={(el) => {
-                    if (el) {
-                      el.style.setProperty(
-                        "background-color",
-                        "#ffc107",
-                        "important"
-                      );
-                      el.style.setProperty("color", "#000000", "important");
-                      el.style.setProperty("font-weight", "500", "important");
-                    }
-                  }}
-                >
-                  {creating ? (
-                    creating
-                  ) : (
-                    <div>
-                      Create a node
-                      <br />
-                      <span style={{ fontSize: "11px" }}>1 node=10 EASY</span>
-                    </div>
-                  )}
-                </button>
-                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
-                <button
-                  className="btn btn-primary js-tilt"
-                  id="claim-rewards"
-                  ref={(el) => {
-                    if (el) {
-                      el.style.setProperty(
-                        "background-color",
-                        "#ffc107",
-                        "important"
-                      );
-                      el.style.setProperty("color", "#000000", "important");
-                      el.style.setProperty("font-weight", "500", "important");
-                    }
-                  }}
-                  onClick={handleClaimrewards}
-                >
-                  {claiming ? claiming : "Claim rewards"}
-                </button>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 mt-3">
+            <div className="col-xl-4 col-lg-6 mt-3">
               <div className="concept-box-dapp" style={{ padding: "40px" }}>
                 <AiOutlineInfoCircle
                   style={{ color: "#ffc107", fontSize: "64px" }}
@@ -259,7 +198,76 @@ const Dapp = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-6 mt-3">
+            <div className="col-xl-4 col-lg-6 mt-3">
+              <div
+                className="concept-box-dapp"
+                style={{ paddingTop: "20px", paddingBottom: "30px" }}
+              >
+                <span className="badge badge-warning">1 MID</span>{" "}
+                <span className="badge badge-success" id="banana_price">
+                  {tokenPrice ? tokenPrice.toFixed(4) : "--"} $
+                </span>
+                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
+                <span className="badge badge-light">
+                  You have: <span id="banana_balance">{balance}</span> MID
+                </span>
+                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
+                <button
+                  className="btn btn-primary js-tilt"
+                  id="create-node"
+                  onClick={handleCreateNode}
+                  ref={(el) => {
+                    if (el) {
+                      el.style.setProperty(
+                        "background-color",
+                        "#ffc107",
+                        "important"
+                      );
+                      el.style.setProperty("color", "#000000", "important");
+                      el.style.setProperty("font-weight", "500", "important");
+                    }
+                  }}
+                >
+                  {creating ? (
+                    creating
+                  ) : (
+                    <div>
+                      Create a node
+                      <br />
+                      <span style={{ fontSize: "11px" }}>1 node=30 MID</span>
+                    </div>
+                  )}
+                </button>
+                <hr style={{ marginTop: "13px", marginBottom: "13px" }} />
+                <button
+                  className="btn btn-primary js-tilt"
+                  id="claim-rewards"
+                  ref={(el) => {
+                    if (el) {
+                      el.style.setProperty(
+                        "background-color",
+                        "#ffc107",
+                        "important"
+                      );
+                      el.style.setProperty("color", "#000000", "important");
+                      el.style.setProperty("font-weight", "500", "important");
+                    }
+                  }}
+                  onClick={handleClaimrewards}
+                >
+                  {claiming ? claiming : "Claim rewards"}
+                  {creating ? (
+                    creating
+                  ) : (
+                    <div>
+                      
+                      <span style={{ fontSize: "11px" }}>20% Tax (first week only)</span>
+                    </div>
+                  )}
+                </button>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-6 mt-3">
               <div className="concept-box-dapp" style={{ padding: "40px" }}>
                 <FaDollarSign style={{ color: "#ffc107", fontSize: "64px" }} />
                 <br />
@@ -284,7 +292,7 @@ const Dapp = () => {
                     color: "#292929",
                   }}
                 >
-                  Daily/Node: {dailyReward} EASY
+                  Daily/Node: {dailyReward} MID
                 </span>
                 <span id="boost_is_real" style={{ display: "none" }}>
                   <i
@@ -298,37 +306,6 @@ const Dapp = () => {
                     id="claim_not_ok2"
                   ></i>
                 </span>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-6 mt-3 ">
-              <div className="concept-box-dapp" style={{ padding: "40px" }}>
-                <FaNetworkWired
-                  style={{ color: "#ffc107", fontSize: "64px" }}
-                />
-                <br />
-                <br />
-                <h5 style={{ marginBottom: "25px" }}>All nodes</h5>
-                <div
-                  id="all_nodes"
-                  style={{
-                    fontSize: "40px",
-                    fontWeight: 600,
-                    color: "#000",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {NodeCount}
-                </div>
-                <div
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: 400,
-                    color: "#292929",
-                    height:'23px'
-                  }}
-                >
-                  {/* 1 node=10 EASY */}
-                </div>
               </div>
             </div>
             
@@ -362,7 +339,7 @@ const Dapp = () => {
                       <center>Manage</center>
                     </th>
                     <th>
-                      <center>Daily EASY</center>
+                      <center>Daily MID</center>
                     </th>
                   </tr>
                 </thead>
@@ -380,9 +357,9 @@ const Dapp = () => {
                         {(precision.remove(node.tokenValue, 15) / 1000).toFixed(
                           3
                         )}{" "}
-                        EASY
+                        MID
                       </td>
-                      <td>{node.rewardAvailable} EASY</td>
+                      <td>{node.rewardAvailable} MID</td>
                       <td style={{ textAlign: "center" }}>
                         <button
                           className="btn btn-primary js-tilt"
@@ -392,6 +369,7 @@ const Dapp = () => {
                             padding: "5px 12px",
                             fontWeight: 600,
                             cursor: "pointer",
+                            marginLeft:0,
                           }}
                           ref={(el) => {
                             if (el) {
@@ -415,6 +393,7 @@ const Dapp = () => {
                           data-tilt-perspective="300"
                           data-tilt-speed="700"
                           data-tilt-max="5"
+
                           onClick={() => claimNode(idx)}
                         >
                           Claim
@@ -520,12 +499,12 @@ const Dapp = () => {
                   <div className="col-md-12 mb-4">
                     <h4 style={{ color: "#a0a0a0", fontWeight: 800 }}>
                       <i className="far fa-info-circle fa-2x"></i> Insufficient
-                      EASY
+                      MID
                     </h4>
                   </div>
                   <div className="col-xl-12">
                     <p className="mb-3">
-                      You need a minimum of 10 EASY to create a node.
+                      You need a minimum of 30 MID to create a node.
                     </p>
                   </div>
                 </div>

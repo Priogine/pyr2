@@ -47,7 +47,37 @@ const HeaderSec = () => {
   return (
     <div className="container" style={{ paddingTop: 40 }}>
       <div className="row">
-        <div className="col-md-12" style={{ paddingRight: 0 }}>
+        <div className="col-md-12 justify-content-center" style={{ paddingRight: 0, textAlign:'center' }}>
+        
+        <a
+            href="#"
+            className="btn btn-primary js-tilt"
+            id="buy_banana"
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty(
+                  "background-color",
+                  "#ffc107",
+                  "important"
+                );
+                el.style.setProperty("color", "#000000", "important");
+                el.style.setProperty("font-weight", "500", "important");
+              }
+            }}
+            style={{
+              // float: "left",
+              marginTop: "10px",
+              paddingLeft: "15px",
+              paddingRight: "15px",
+              minWidth:'120px'
+            }}
+            data-tilt-perspective="300"
+            data-tilt-speed="700"
+            data-tilt-max="24"
+            rel="noreferrer"
+          >
+            BUY
+          </a>
           <Link to="/" className="navbar-brand hidden-xs-down">
             <img src={SmallLogo} alt="" style={{ height: "5rem" }} />
           </Link>
@@ -72,7 +102,7 @@ const HeaderSec = () => {
                 }}
                 style={{
                   marginRight: "30px",
-                  float: "right",
+                  // float: "right",
                   marginTop: "10px",
                   paddingLeft: "15px",
                   paddingRight: "15px",
@@ -101,7 +131,7 @@ const HeaderSec = () => {
                 }}
                 style={{
                   marginRight: "30px",
-                  float: "right",
+                  // float: "right",
                   marginTop: "10px",
                   paddingLeft: "15px",
                   paddingRight: "15px",
@@ -131,7 +161,7 @@ const HeaderSec = () => {
               }}
               style={{
                 marginRight: "30px",
-                float: "right",
+                // float: "right",
                 marginTop: "10px",
                 paddingLeft: "15px",
                 paddingRight: "15px",
@@ -145,35 +175,7 @@ const HeaderSec = () => {
             </button>
           )}
           {/* href="https://traderjoexyz.com/trade?outputCurrency=0xe1328bD8ba00AaaD1BA60C68B021Fb6A3BB56FD7#/" */}
-          <a
-            href="#"
-            className="btn btn-primary js-tilt"
-            id="buy_banana"
-            ref={(el) => {
-              if (el) {
-                el.style.setProperty(
-                  "background-color",
-                  "#ffc107",
-                  "important"
-                );
-                el.style.setProperty("color", "#000000", "important");
-                el.style.setProperty("font-weight", "500", "important");
-              }
-            }}
-            style={{
-              marginRight: 0,
-              float: "right",
-              marginTop: "10px",
-              paddingLeft: "15px",
-              paddingRight: "15px",
-            }}
-            data-tilt-perspective="300"
-            data-tilt-speed="700"
-            data-tilt-max="24"
-            rel="noreferrer"
-          >
-            BUY
-          </a>
+          
         </div>
         <Outlet />
       </div>
