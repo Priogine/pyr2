@@ -80,7 +80,7 @@ const HeaderFir = () => {
                   <li className="nav-item">
                     <a
                       className="nav-link __mPS2id"
-                      href="/"
+                      href="https://pyranodes.com/"
                       data-ps2id-offset="120"
                     >
                       Home
