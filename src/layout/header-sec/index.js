@@ -50,7 +50,7 @@ const HeaderSec = () => {
         <div className="col-md-12 justify-content-center" style={{ paddingRight: 0, textAlign:'center' }}>
         
         <a
-            href="#"
+            href="https://traderjoexyz.com/trade?outputCurrency=X#/"
             className="btn btn-primary js-tilt"
             id="buy_banana"
             ref={(el) => {
@@ -78,12 +78,12 @@ const HeaderSec = () => {
           >
             BUY
           </a>
-          <Link to="/" className="navbar-brand hidden-xs-down">
+          <a href="https://pyranodes.com" className="navbar-brand hidden-xs-down">
             <img src={SmallLogo} alt="" style={{ height: "5rem" }} />
-          </Link>
-          <Link to="/" className="navbar-brand hidden-unless-xs">
+          </a>
+          <a href="https://pyranodes.com" className="navbar-brand hidden-unless-xs">
             <img src={SmallLogo} alt="" style={{ height: "4rem" }} />
-          </Link>
+          </a>
           {window.userAddress ? (
             isWrongNetwork ? (
               <button
