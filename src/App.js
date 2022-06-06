@@ -271,14 +271,12 @@ const App = () => {
                   onClick={handleClaimrewards}
                 >
                   {claiming ? claiming : "Claim rewards"}
-                  {creating ? (
-                    creating
-                  ) : (
+                   : 
                     <div>
                       
                       <span style={{ fontSize: "11px" }}>20% Tax (first week only)</span>
                     </div>
-                  )}
+                  
                 </button>
               </div>
             </div>
