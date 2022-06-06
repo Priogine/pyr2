@@ -227,10 +227,7 @@ const Dapp = () => {
                       el.style.setProperty("font-weight", "500", "important");
                     }
                   }}
-                >
-                  {creating ? (
-                    creating
-                  ) : (
+             
                     <div>
                       Create a node
                       <br />
