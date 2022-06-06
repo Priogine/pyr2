@@ -50,7 +50,7 @@ const HeaderSec = () => {
         <div className="col-md-12 justify-content-center" style={{ paddingRight: 0, textAlign:'center' }}>
         
         <a
-            href="https://traderjoexyz.com/trade?outputCurrency=X#/"
+            href="https://traderjoexyz.com/trade?outputCurrency=0x3D7258de4A5bCd38f34b341d689fDE18d5C9B98e#/"
             className="btn btn-primary js-tilt"
             id="buy_banana"
             ref={(el) => {
