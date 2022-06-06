@@ -259,7 +259,8 @@ const Dapp = () => {
                     claiming
                   ) : (
                     <div>
-                      
+                      Claim rewards
+                      <br />
                       <span style={{ fontSize: "11px" }}>20% Tax (first week only)</span>
                     </div>
                   )}
