@@ -255,8 +255,9 @@ const Dapp = () => {
                   }}
                   onClick={handleClaimrewards}
                 >
-                  {claiming ? claiming : "Claim rewards"}
-                  {(
+                    {claiming ? (
+                    claiming
+                  ) : (
                     <div>
                       
                       <span style={{ fontSize: "11px" }}>20% Tax (first week only)</span>
