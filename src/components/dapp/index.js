@@ -89,9 +89,9 @@ const Dapp = () => {
     return () => clearInterval(interval);
   }, []);
   const handleCreateNode = async () => {
-    if (balance < 10) {
+    if (balance < 30) {
       alert(
-        "You don't have enough MID token now. Please buy it and try again."
+        "You don't have enough MID now. Please buy some and try again."
       );
       return;
     } else if (createFlg === true) {
